@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Information</title>
-    <link rel="stylesheet" href="css/desktop.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Cantor College</title>
+
+  <link rel="stylesheet" href="css/desktop.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
 
-    <section class="staffinfo-container ">
+ 
+  <section class="studentinfo-container ">
         <nav class="navbar">
-            <img src="./img/Logo1.png" alt="">
+            <img src="./img/Logo1.webp" alt="">
             <div class="navlink">
                 <ul>
                     <li><a href="homepage.html">Home</a></li>
@@ -28,8 +30,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="Information.html">Students information</a></li>
                             <li><a href="staffinfo.html">Staff information</a></li>
-                            <li><a href="#">Learning Resources</a></li>
-                            <li><a href="business.html">Business</a></li>
+                            <li><a href="learning.html">Learning Resources</a></li>
                         </ul>
                     </li>
                     <li><a href="about.html">About us</a></li>
@@ -39,7 +40,81 @@
         </nav>
     </section>
 
+  <!-- PAGE HEADER -->
+  <header class="head-container">
+    <h1>About Us</h1>
+    <img src="./img/outsideimg12.jpeg" alt="">
+  </header>
 
+  <!-- MAIN CONTENT -->
+  <main class="info-container">
+
+    <!-- About section -->
+    <section class="about-container">
+      <div class="about-items">
+        <h2>Who we are</h2>
+        <p style="width: 500px;">
+          Cantor College is a modern learning environment that supports students with practical skills,
+          real-world projects, and industry-style teaching. We focus on helping learners build confidence,
+          improve employability, and prepare for the future.
+        </p>
+        <p style="width: 500px;">
+          Our campus includes learning spaces, computing labs, support services, and study areas designed
+          to help students succeed academically and personally.
+        </p>
+      </div>
+
+      <img style="width: 400px; height: 300px;" src="img/spacesimg1.webp" alt="Cantor College learning space">
+    </section>
+
+  
+   
+
+    <!-- Why choose us -->
+    <section class="service-container">
+      <h1>Why choose Cantor College?</h1>
+
+      <div class="homecourse-content">
+        <div class="service-content">
+          <h3>Modern Facilities</h3>
+          <p>Updated learning spaces and labs that support practical work and project-based learning.</p>
+        </div>
+
+        <div class="service-content">
+          <h3>Student Support</h3>
+          <p>Friendly academic and wellbeing support to help students stay on track.</p>
+        </div>
+
+        <div class="service-content">
+          <h3>Career Focus</h3>
+          <p>We guide students toward placements, CV improvements, and career-ready skills.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="contact-container">
+      <div class="contact-content">
+        <div class="info-items">
+          <h2>Want to learn more?</h2>
+          <p>
+            If you have questions about admissions, courses, facilities, or student support, contact us and
+            we’ll help you as soon as possible.
+          </p>
+
+          <div class="contactlink">
+            <a class="contactlink-btn" href="contact.html">Contact us</a>
+            <a class="contactlink-btn" href="Information.html">More information</a>
+          </div>
+        </div>
+
+        <img src="img/classimg5.webp" alt="Innovation lab at Cantor College">
+      </div>
+    </section>
+
+  </main>
+
+  
     <footer class="footer-container">
         <div class="footer-content">
             <div class="footer-items1">
@@ -95,3 +170,6 @@
         </div>
     </footer>
 
+
+</body>
+</html>

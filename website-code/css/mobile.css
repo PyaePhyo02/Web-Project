@@ -1,0 +1,297 @@
+/* =========================================
+   UNIVERSAL MOBILE VIEW (Overrides desktop.css)
+   Works across iPhone/Android/Chrome/Safari
+   DO NOT change HTML classes/ids
+========================================= */
+
+/* Base safety */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================================
+   MOBILE: tablets + phones
+========================================= */
+@media (max-width: 768px) {
+
+  /* ===== NAVBAR ===== */
+  .navbar{
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+    padding: 12px 14px !important;
+  }
+
+  .navlink ul{
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 6px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .navlink ul li{
+    width: 100% !important;
+  }
+
+  .navlink ul li a{
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 12px 14px !important;
+  }
+
+  /* Dropdown: prevent off-screen overlap */
+  .dropdown-menu{
+    position: static !important;
+    width: 100% !important;
+    display: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 999 !important;
+  }
+
+  .dropdown:hover .dropdown-menu,
+  .dropdown:focus-within .dropdown-menu{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+    margin-top: 8px !important;
+  }
+
+  .dropdown-menu li a{
+    width: 100% !important;
+    justify-content: flex-start !important;
+  }
+
+  /* ===== HERO / WELCOME ===== */
+  .welcome-container{
+    height: auto !important;
+    min-height: 70vh !important;
+    width: 100% !important;
+    background-position: center !important;
+  }
+
+  .welcomecontent{
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 16px !important;
+    gap: 14px !important;
+  }
+
+  .welcomecontent p{
+    width: 100% !important; /* desktop.css sets 600px */
+    max-width: 100% !important;
+    font-size: 16px !important;
+  }
+
+  .welcometext{
+    width: 92vw !important;   /* desktop.css: 50% */
+    max-width: 92vw !important;
+    height: auto !important; /* desktop.css: 270px */
+    top: 0 !important;       /* desktop.css: top:15% */
+    margin: 14px auto !important;
+    padding: 16px !important;
+  }
+
+  /* Buttons (desktop uses fixed sizes and top offsets) */
+  .allbtn{
+    width: 100% !important;
+    height: auto !important;
+    padding: 12px 14px !important;
+    top: 0 !important;
+  }
+
+  .btn2{
+    width: 100% !important;
+  }
+
+  /* ===== HEAD SECTION (Contact us header area etc.) ===== */
+  .head-container{
+    height: auto !important; /* desktop.css: 400px */
+    padding: 70px 14px 20px !important;
+  }
+
+  .head-content{
+    flex-direction: column !important;
+    gap: 18px !important;
+    align-items: stretch !important;
+  }
+
+  .head-container img{
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* ===== MAIN CONTENT / CARDS (this is the overlap fix) ===== */
+  .content-items{
+    width: 100% !important;   /* desktop.css: 500px */
+    height: auto !important;  /* desktop.css: 200px */
+    margin: 0 0 16px 0 !important;
+  }
+
+  .content-items p{
+    width: 100% !important;
+  }
+
+  /* ===== HOME ABOUT ===== */
+  .homeabout-container{
+    height: auto !important; /* desktop.css: 450px */
+    padding: 14px !important;
+    top: 0 !important;
+  }
+
+  .homeabout-content{
+    flex-direction: column !important;
+    top: 0 !important; /* desktop.css: top: 30px */
+    gap: 14px !important;
+  }
+
+  /* ===== HOME COURSE ===== */
+  .homecourse-container{
+    height: auto !important; /* desktop.css: 900px */
+    padding: 14px !important;
+  }
+
+  .homecourse-content{
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+
+  .homecourse-content2{
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+
+  /* ===== HOME FACILITIES ===== */
+  .homefaci-container{
+    width: 100% !important;
+    height: auto !important; /* desktop.css: 600px */
+    padding: 14px !important;
+  }
+
+  .homefaci-items{
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+
+  .homefaci-card{
+    width: 100% !important;   /* desktop.css: 500px */
+    height: auto !important;  /* desktop.css: 250px */
+    padding: 16px !important;
+  }
+
+  .homefaci-card p{
+    width: 100% !important;
+  }
+
+  /* ===== INFORMATION PAGE BLOCKS ===== */
+  .information-container{
+    width: 100% !important;
+    height: auto !important;
+    padding: 14px !important;
+  }
+
+  .information-container p{
+    width: 100% !important;
+  }
+
+  .info-content{
+    flex-direction: column !important;
+    gap: 14px !important;
+    padding: 14px !important;
+  }
+
+  .info-content img{
+    width: 100% !important;  /* desktop.css: 400px */
+    height: auto !important; /* desktop.css: 250px */
+  }
+
+  .info-items{
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .info-facicontainer h2,
+  .info-facicontainer h4{
+    text-align: center !important;
+  }
+
+  /* ===== LEARNING / RULES / FACI USE / SERVICES ===== */
+  .intro-container,
+  .learning-container,
+  .faciuse-container,
+  .partner-container{
+    width: 100% !important;
+    height: auto !important;
+    padding: 14px !important;
+  }
+
+  .learning-container img,
+  .faciuse-container img,
+  .rules-container img,
+  .contact-content img{
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .service-content{
+    width: 100% !important; /* desktop.css: 400px */
+    margin-bottom: 16px !important;
+  }
+
+  .partner-container h1,
+  .service-container h1,
+  .rules-container h1,
+  .exp-content h1{
+    text-align: center !important;
+  }
+
+  .exp-items p{
+    width: 100% !important;
+  }
+
+  /* ===== LINKS / ICON ROWS ===== */
+  .contactlink,
+  .facilink{
+    width: 100% !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer-content{
+    flex-direction: column !important;
+    height: auto !important;
+    gap: 18px !important;
+    padding: 18px !important;
+  }
+
+  .footer-socialicon ul{
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+}
+
+/* =========================================
+   EXTRA SMALL PHONES
+========================================= */
+@media (max-width: 420px) {
+  .welcometext{ width: 94vw !important; max-width: 94vw !important; }
+  .navlink ul li a{ font-size: 15px !important; padding: 11px 12px !important; }
+}

@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Information</title>
-    <link rel="stylesheet" href="css/desktop.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Cantor College</title>
+
+  <link rel="stylesheet" href="css/desktop.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
 
-    <section class="staffinfo-container ">
+  <section class="studentinfo-container ">
         <nav class="navbar">
-            <img src="./img/Logo1.png" alt="">
+            <img src="./img/Logo1.webp" alt="">
             <div class="navlink">
                 <ul>
                     <li><a href="homepage.html">Home</a></li>
@@ -28,8 +29,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="Information.html">Students information</a></li>
                             <li><a href="staffinfo.html">Staff information</a></li>
-                            <li><a href="#">Learning Resources</a></li>
-                            <li><a href="business.html">Business</a></li>
+                            <li><a href="learning.html">Learning Resources</a></li>
                         </ul>
                     </li>
                     <li><a href="about.html">About us</a></li>
@@ -39,7 +39,77 @@
         </nav>
     </section>
 
+  <!-- PAGE HEADER -->
+  <header class="head-container">
+    <img src="./img/outsideimg11.jpeg" style="width: 100%; height: 400px;" "  alt="">
+    
+  </header>
 
+  <!-- CONTACT CONTENT -->
+  <main class="contact-container">
+    <div class="contact-content">
+
+      <!-- Left: form -->
+      <div class="info-items">
+        <h2>Send us a message</h2>
+        <p>
+          Please fill in the form below. We will reply as soon as possible (usually within 1–2 working days).
+        </p>
+
+        <form class="contact-form" action="#" method="post">
+          <label for="fullname">Full name</label><br />
+          <input id="fullname" name="fullname" type="text" placeholder="Your name" required /><br /><br />
+
+          <label for="email">Email address</label><br />
+          <input id="email" name="email" type="email" placeholder="yourname@email.com" required /><br /><br />
+
+          <label for="subject">Subject</label><br />
+          <input id="subject" name="subject" type="text" placeholder="What is your message about?" required /><br /><br />
+
+          <label for="message">Message</label><br />
+          <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea><br /><br />
+
+          <button class="allbtn" type="submit">Send message</button>
+        </form>
+
+        <br />
+
+        <div class="contactlink">
+          
+        </div>
+      </div>
+
+      <!-- Right: contact details -->
+      <div class="info-items">
+        <h2>Contact details</h2>
+        <p><strong>Email:</strong> info@cantorcollege.example</p>
+        <p><strong>Phone:</strong> +44 0000 000000</p>
+        <p><strong>Address:</strong> Sheffield, UK</p>
+
+        <h3>Opening hours</h3>
+        <p>Monday – Friday: 9:00 – 17:00</p>
+        <p>Saturday: 10:00 – 14:00</p>
+        <p>Sunday: Closed</p>
+
+        <!-- Optional embedded map (replace link later) -->
+        <div class="map-box">
+          <iframe
+            title="Map"
+            width="100%"
+            height="250"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Sheffield%20UK&output=embed">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  
     <footer class="footer-container">
         <div class="footer-content">
             <div class="footer-items1">
@@ -95,3 +165,6 @@
         </div>
     </footer>
 
+
+</body>
+</html>
